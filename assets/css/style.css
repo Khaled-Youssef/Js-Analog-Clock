@@ -1,0 +1,82 @@
+html{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    text-align: center;
+}
+body{
+    font-size: 2em;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.clock{
+width: 30rem;
+height: 30rem;
+border: 20px solid #fff;
+border-radius: 50%;
+margin:50px auto;
+position: relative;
+padding: 2%;
+box-shadow:
+0 0 0px 5px rgba(0,0,0,0.1),
+inset 0 0 0 3px #EFEFEF,
+inset 0 0 0 5px black,
+0 0 10px rgba(0,0,0,0.2);
+}
+
+.clock-face{
+position: relative;
+width: 100%;
+height: 100%;
+transform: translateX(-3px);
+}
+.hand{
+width:50%;
+height: 6px;
+background-color: #000;
+position: absolute;
+top: 50%;
+transform: rotate(90deg);
+transform-origin: 100%;
+transition: all 0.05s;
+transition-timing-function: cubic-bezier(0,2.88,.58,1);
+}
+
+
+.hand.hour-hand {
+width: 25%;
+height: 15px;
+left: 25%;
+}
+
+.hand.min-hand {
+width: 40%;
+height: 10px;
+left: 10%;
+}
+
+.copyrights {
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+	bottom: 20px;
+	text-align: center;
+	font-size: 15px;
+	color: #fff;
+}
+
+
+.copyrights a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.copyrights a img {
+	width: 80px;
+	display: inline-block;
+	position: relative;
+	top: 25px;
+}
