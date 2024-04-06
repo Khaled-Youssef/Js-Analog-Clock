@@ -7,5 +7,5 @@
 </div>
 
 ## :star2: About the Project
-Simple Watch using HTML & Vanilla JavaScript
+Simple Watch using HTML & Vanilla. JavaScript
 No Framework was used
